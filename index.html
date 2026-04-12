@@ -6,7 +6,7 @@
     <title>INSAR 2026 Poster Contact Card - Bitton & Shulman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; }
@@ -118,32 +118,22 @@
             transition: all 0.2s;
             cursor: pointer;
             width: 100%;
+            margin-bottom: 12px;
         }
         .btn:active { transform: scale(0.98); }
-        .btn-email { background-color: var(--accent-blue); color: #fff; border: none; }
-        .btn-poster {
-            background-color: #fff;
-            color: var(--primary-blue);
-            border: 2px solid var(--primary-blue);
-            margin-bottom: 25px;
-        }
-        .footer {
-            font-size: 12px;
-            color: #94a3b8;
-            text-align: center;
-            margin-top: 5px;
-            width: 100%;
-        }
+        .btn-view { background-color: var(--primary-blue); color: #fff; border: none; }
+        .btn-download { background-color: #fff; color: var(--primary-blue); border: 2px solid var(--primary-blue); margin-bottom: 25px; }
+        .btn-email { background-color: var(--accent-blue); color: #fff; border: none; margin-bottom: 0; }
+        
+        .footer { font-size: 12px; color: #94a3b8; text-align: center; margin-top: 10px; }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="header">
-            <div class="card-header">
-                <div class="header-title">INSAR 2026 Poster</div>
-                <div class="research-topic">
-                    The Impact of Parent-Child Relationship Quality on the Link Between Parental Stress and Behavioral Problems in Children with Autism
-                </div>
+        <div class="card-header">
+            <div class="header-title">INSAR 2026 Poster</div>
+            <div class="research-topic">
+                The Impact of Parent-Child Relationship Quality on the Link Between Parental Stress and Behavioral Problems in Children with Autism
             </div>
         </div>
         <div class="card-body">
@@ -151,9 +141,14 @@
                 The Hebrew University of Jerusalem | Achva Academic College
             </div>
 
-            <!-- חשוב: הקישור הזה חייב להתאים בדיוק לשם הקובץ שהעלית ל-GitHub -->
-            <a href="academic_research_poster.html" target="_blank" class="btn btn-poster">
-                <i class="fa-solid fa-file-pdf"></i> View Digital Poster
+            <!-- צפייה בפוסטר האינטראקטיבי -->
+            <a href="academic_research_poster.html" target="_blank" class="btn btn-view">
+                <i class="fa-solid fa-mobile-screen-button"></i> View Interactive Poster
+            </a>
+
+            <!-- הורדת PDF (ודאי שהעלית קובץ בשם poster.pdf ל-GitHub) -->
+            <a href="poster.pdf" download="INSAR_2026_Poster_Bitton.pdf" class="btn btn-download">
+                <i class="fa-solid fa-file-pdf"></i> Download PDF Version
             </a>
 
             <div class="contact-section">
@@ -173,10 +168,8 @@
                     <i class="fa-solid fa-envelope"></i> Email Prof. Shulman
                 </a>
             </div>
-
-            <div class="footer">
-                Scan the QR code on the poster to return here.
-            </div>
+            
+            <div class="footer">Scan the QR on the poster to return here.</div>
         </div>
     </div>
 </body>
